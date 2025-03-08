@@ -35,31 +35,12 @@
   <!-- Game Screen: World Map -->
   <div id="game" class="screen">
     <h2>World Map</h2>
-    <div id="mapContainer">
-      <!-- A very simplified inline SVG world map -->
-      <svg id="worldMap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
-        <!-- Sample countries with rough shapes -->
-        <path id="north-america" d="M100,150 L200,100 L300,150 L250,250 L150,250 Z" fill="#cce5ff" stroke="#333" stroke-width="2"/>
-        <text x="190" y="170" font-size="20" fill="#333">NA</text>
-        
-        <path id="south-america" d="M220,250 L260,300 L240,350 L200,350 L180,300 Z" fill="#d4edda" stroke="#333" stroke-width="2"/>
-        <text x="210" y="320" font-size="20" fill="#333">SA</text>
-        
-        <path id="europe" d="M350,100 L400,90 L420,130 L380,150 L360,110 Z" fill="#fff3cd" stroke="#333" stroke-width="2"/>
-        <text x="370" y="120" font-size="20" fill="#333">EU</text>
-        
-        <path id="africa" d="M360,160 L400,180 L380,250 L340,240 Z" fill="#f8d7da" stroke="#333" stroke-width="2"/>
-        <text x="360" y="210" font-size="20" fill="#333">AF</text>
-        
-        <path id="asia" d="M420,120 L500,110 L540,160 L520,200 L480,190 Z" fill="#d1ecf1" stroke="#333" stroke-width="2"/>
-        <text x="480" y="150" font-size="20" fill="#333">AS</text>
-        
-        <path id="australia" d="M550,250 L600,260 L590,300 L540,290 Z" fill="#e2e3e5" stroke="#333" stroke-width="2"/>
-        <text x="565" y="275" font-size="20" fill="#333">AU</text>
-      </svg>
-    </div>
+    <div id="mapContainer"></div>
   </div>
 
+  <!-- Load D3 library from a CDN -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <!-- Your game logic -->
   <script src="script.js"></script>
 </body>
 </html>
