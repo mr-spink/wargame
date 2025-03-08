@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Conquer Countries">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+  <title>Conquer Countries</title>
+</head>
+<body>
+  <!-- Load-up Menu Screen -->
+  <div id="menu" class="screen">
+    <h1>Conquer Countries</h1>
+    <p>Welcome to Conquer Countries! This is a strategy game where your decisions shape your nation.</p>
+    <button id="startButton">Start Game</button>
+  </div>
+
+  <!-- Tutorial Screen -->
+  <div id="tutorial" class="screen">
+    <h2>How to Play</h2>
+    <p>
+      In this game you will lead a country on a world map.
+      Tap on your country to make decisions—like creating jobs or balancing budgets—that will affect your citizens and money.
+    </p>
+    <p>
+      Explore the map by zooming and panning (future versions will add more interactivity)!
+    </p>
+    <button id="tutorialOk">Ok</button>
+  </div>
+
+  <!-- Game Screen: World Map -->
+  <div id="game" class="screen">
+    <h2>World Map</h2>
+    <div id="mapContainer">
+      <!-- A very simplified inline SVG world map -->
+      <svg id="worldMap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+        <!-- Sample countries with rough shapes -->
+        <path id="north-america" d="M100,150 L200,100 L300,150 L250,250 L150,250 Z" fill="#cce5ff" stroke="#333" stroke-width="2"/>
+        <text x="190" y="170" font-size="20" fill="#333">NA</text>
+        
+        <path id="south-america" d="M220,250 L260,300 L240,350 L200,350 L180,300 Z" fill="#d4edda" stroke="#333" stroke-width="2"/>
+        <text x="210" y="320" font-size="20" fill="#333">SA</text>
+        
+        <path id="europe" d="M350,100 L400,90 L420,130 L380,150 L360,110 Z" fill="#fff3cd" stroke="#333" stroke-width="2"/>
+        <text x="370" y="120" font-size="20" fill="#333">EU</text>
+        
+        <path id="africa" d="M360,160 L400,180 L380,250 L340,240 Z" fill="#f8d7da" stroke="#333" stroke-width="2"/>
+        <text x="360" y="210" font-size="20" fill="#333">AF</text>
+        
+        <path id="asia" d="M420,120 L500,110 L540,160 L520,200 L480,190 Z" fill="#d1ecf1" stroke="#333" stroke-width="2"/>
+        <text x="480" y="150" font-size="20" fill="#333">AS</text>
+        
+        <path id="australia" d="M550,250 L600,260 L590,300 L540,290 Z" fill="#e2e3e5" stroke="#333" stroke-width="2"/>
+        <text x="565" y="275" font-size="20" fill="#333">AU</text>
+      </svg>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
