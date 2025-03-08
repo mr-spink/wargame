@@ -63,10 +63,3 @@ button:hover {
   max-width: 1000px;
   margin: 20px auto;
 }
-
-svg {
-  width: 100%;
-  height: auto;
-  border: 1px solid #333;
-  background: #fff;
-}
